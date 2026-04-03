@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peter G. Hansen — Teaching</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #f5f2eb;
+      --ink: #1a1a18;
+      --mid: #5a5850;
+      --light: #9a9690;
+      --rule: #d0cdc6;
+      --accent: #8b3a2a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 17px; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    header {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    header h1 span {
+      display: block;
+      font-size: 1rem;
+      font-family: 'DM Mono', monospace;
+      font-weight: 300;
+      color: var(--mid);
+      letter-spacing: 0.02em;
+      margin-top: 0.4rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding-bottom: 0.2rem;
+    }
+
+    nav a {
+      color: var(--mid);
+      text-decoration: none;
+      transition: color 0.15s;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 1px;
+    }
+
+    nav a:hover, nav a.active { color: var(--ink); border-bottom-color: var(--ink); }
+
+    main {
+      padding: 3rem 0 4rem;
+      max-width: 600px;
+    }
+
+    .section-title {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .course {
+      margin-bottom: 2.4rem;
+    }
+
+    .course-name {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.15rem;
+    }
+
+    .course-meta {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.73rem;
+      font-weight: 300;
+      color: var(--light);
+      margin-bottom: 0.6rem;
+    }
+
+    .course-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .course-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 300;
+      color: var(--mid);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.15s;
+    }
+
+    .course-links a::before { content: '→'; color: var(--accent); }
+    .course-links a:hover { color: var(--ink); }
+
+    .placeholder {
+      font-size: 1rem;
+      color: var(--light);
+      font-style: italic;
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 1.5rem 0 2.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--light);
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 640px) {
+      header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>
+        Peter G. Hansen
+        <span>Assistant Professor of Finance · Purdue University</span>
+      </h1>
+      <nav>
+        <a href="index.html">Research</a>
+        <a href="teaching.html" class="active">Teaching</a>
+        <a href="CV.pdf" target="_blank">CV</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <a href="LectureNotes.pdf" target="_blank" style="font-family:'EB Garamond',Georgia,serif; font-size:1.15rem; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--rule); padding-bottom:1px; transition:color 0.15s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--ink)'">Corporate Finance Lecture Notes</a>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© 2026 Peter G. Hansen</div>
+    </footer>
+
+  </div>
+</body>
+</html>
